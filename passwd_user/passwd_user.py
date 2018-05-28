@@ -1,6 +1,6 @@
 user_file = 'user.txt'
 lock_file = 'user_lock.txt'
-with open(user_file,'r') as f:
+with open(user_file, 'r') as f:
     user = f.read().split('\n')
     user_list = {}
     for r in user:
@@ -8,6 +8,8 @@ with open(user_file,'r') as f:
         user_list[name] = str(password)
 with open(lock_file) as f:
     lock = f.read().split('\n')[:-1]
+
+
 def login(username, password):
     if username in user_list:
         if username in lock:
@@ -23,6 +25,8 @@ def login(username, password):
     else:
         print("登陆失败！用户或密码错误")
         return 2
+
+
 const = 0
 while const < 3:
     username = input("请输入你的用户名:")
@@ -34,7 +38,7 @@ while const < 3:
         break
     const += 1
 
-    if const==3:
-        with open(lock_file,'w') as f:
+    if const == 3:
+        with open(lock_file, 'w') as f:
             f.write(username + '\n')
         print("输入错误三次，您的账户已被锁定，请联系管理员！")

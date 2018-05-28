@@ -29,10 +29,81 @@ goods = [
 
 2、允许查询之前的消费记录'''
 goods = [
-{"name": "电脑", "price": 1999},
-{"name": "鼠标", "price": 10},
-{"name": "游艇", "price": 20},
-{"name": "美女", "price": 998},
+    {"name": "电脑", "price": 1999},
+    {"name": "鼠标", "price": 10},
+    {"name": "游艇", "price": 20},
+    {"name": "美女", "price": 998},
 ]
-money = input("请输入你的工资:")
-for i in goods:print(i)
+
+with open('user_pwd.txt', 'r') as f:
+    user = f.read().split('\n')
+user_list = {}
+for r in user:
+    name, pwd = r.split(',')
+user_list[name] = str(pwd)
+with open('user_old.txt', 'r') as f:
+    user_old = f.read().split('\n')
+
+
+def login():
+    u = input('请输入你的用户名：')
+    p = input('请输入你的密码：')
+    if u in user_old:
+        pass
+    else:
+        if u in user_list:
+            if user_list[u] == p:
+                print("登陆成功!")
+                return 11
+            else:
+                print('登陆失败!')
+                return 22
+        else:
+            print('登陆失败!')
+            return 22
+
+
+def shop(money):
+    print('''
+    v1.0
+    ++++++++++++++++
+    。。。购物系统。。。
+    ++++++++++++++++
+    ''')
+    temp_money = money
+    shop_car = []
+    total_buy = 0
+    while True:
+        for index, value in enumerate(goods):
+            print("商品编号:%s   商品名称:%s   商品价格:%s" % (index, value['name'], value['price']))
+        choice = input('请输入你要买的商品编号以加入购物车：')
+        if choice.isdigit():
+            if int(choice) >= 0 and int(choice) < len(goods):
+                shop_car.append(goods[int(choice)])
+                print("加入成功!")  # 商品加入购物车
+                print('当前购物车为：',shop_car)
+                print('==========================================')
+        elif choice == 'q':  # 判断是否为退出
+            if len(shop_car) > 0:
+                for num in range(len(shop_car)):
+                    will_buy = shop_car[num]['price']
+                    total_buy += will_buy
+                    temp_money -= total_buy
+                print('++++++++++++++++++++++++++++++++++++++++++')
+                print("正在结算中......")
+                if temp_money <= 0:
+                    print("抱歉，你的余额不足")
+                    return money
+                else:
+                    print('购买完成！')
+                    return temp_money
+            else:
+                print('购物车里没有东西哦！退出系统')
+                return money
+
+
+num = login()
+if num == 11:
+    your_money = int(input("请输入你的工资:"))
+    your_money = shop(your_money)
+    print("你的余额为：%d" % (your_money))
