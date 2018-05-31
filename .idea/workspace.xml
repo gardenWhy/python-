@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c68f3be-e93a-4fee-b460-8c84174977c4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/购物车/user_old.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/购物车/user_pwd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/函数/运维报警/func.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/员工信息表/员工信息.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/员工信息表/员工信息表.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/passwd_user/passwd_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/passwd_user/passwd_user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/购物车/shop_car_23333.py" beforeDir="false" afterPath="$PROJECT_DIR$/购物车/shop_car_23333.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,9 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/python$shop_car_23333.coverage" NAME="shop_car_23333 Coverage Results" MODIFIED="1527055143097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/购物车" />
+    <SUITE FILE_PATH="coverage/python$.coverage" NAME="匿名函数 Coverage Results" MODIFIED="1527757480006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/函数" />
+    <SUITE FILE_PATH="coverage/python$shop_car_23333.coverage" NAME="shop_car_23333 Coverage Results" MODIFIED="1527510530705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/购物车" />
     <SUITE FILE_PATH="coverage/python$menu_tree.coverage" NAME="menu_tree Coverage Results" MODIFIED="1526950288243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/三级菜单" />
+    <SUITE FILE_PATH="coverage/python$test.coverage" NAME="test Coverage Results" MODIFIED="1527554816232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/员工信息表" />
     <SUITE FILE_PATH="coverage/python$passwd_user.coverage" NAME="passwd_user Coverage Results" MODIFIED="1526776284807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$func.coverage" NAME="func Coverage Results" MODIFIED="1527522363176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/运维报警" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -35,7 +38,26 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="作用域.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/函数/作用域.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="匿名函数.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/函数/匿名函数.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,6 +84,14 @@
         <option value="$PROJECT_DIR$/passwd_user/passwd_user.py" />
         <option value="$PROJECT_DIR$/购物车/user_old.txt" />
         <option value="$PROJECT_DIR$/购物车/shop_car_23333.py" />
+        <option value="$PROJECT_DIR$/员工信息表/员工信息表.txt" />
+        <option value="$PROJECT_DIR$/运维报警/func.py" />
+        <option value="$PROJECT_DIR$/员工信息表/test.py" />
+        <option value="$PROJECT_DIR$/函数/函数返回值.py" />
+        <option value="$PROJECT_DIR$/函数/局部变量.py" />
+        <option value="$PROJECT_DIR$/函数/嵌套函数.py" />
+        <option value="$PROJECT_DIR$/函数/作用域.py" />
+        <option value="$PROJECT_DIR$/函数/匿名函数.py" />
       </list>
     </option>
   </component>
@@ -74,11 +104,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="462" />
-    <option name="y" value="35" />
-    <option name="width" value="984" />
-    <option name="height" value="832" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="951" />
+    <option name="width" value="975" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -95,6 +124,11 @@
               <item name="python作业" type="b2602c69:ProjectViewProjectNode" />
               <item name="python作业" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="python作业" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python作业" type="462c0819:PsiDirectoryNode" />
+              <item name="函数" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -105,15 +139,16 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\imgar\Desktop\python集训作业\passwd_user" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\imgar\Desktop\python作业\购物车" />
       <recent name="C:\Users\imgar\Desktop\python集训作业\三级菜单" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\imgar\Desktop\python作业\函数" />
+      <recent name="C:\Users\imgar\Desktop\python集训作业\passwd_user" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -128,8 +163,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.shop_car_23333">
-    <configuration name="menu_tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.匿名函数">
+    <configuration name="函数返回值" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python作业" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,18 +172,18 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/三级菜单" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/函数" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/三级菜单/menu_tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/函数/函数返回值.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="passwd_user" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="匿名函数" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python作业" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -156,18 +191,18 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/函数" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\imgar\Desktop\python集训作业\passwd_user\passwd_user.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/函数/匿名函数.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="shop_car_23333" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="局部变量" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python作业" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -175,27 +210,84 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/购物车" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/函数" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/购物车/shop_car_23333.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/函数/局部变量.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="嵌套函数" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python作业" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/函数" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/函数/嵌套函数.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="作用域" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python作业" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/函数" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/函数/作用域.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python作业" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/员工信息表" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\imgar\Desktop\python作业\员工信息表\员工信息.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.passwd_user" />
-      <item itemvalue="Python.menu_tree" />
-      <item itemvalue="Python.shop_car_23333" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.函数返回值" />
+      <item itemvalue="Python.匿名函数" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.shop_car_23333" />
-        <item itemvalue="Python.menu_tree" />
-        <item itemvalue="Python.passwd_user" />
+        <item itemvalue="Python.匿名函数" />
+        <item itemvalue="Python.函数返回值" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -222,29 +314,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1753" height="993" extended-state="7" />
+    <frame x="863" y="0" width="882" height="984" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32945284" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32945284" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.50121063" side_tool="true" visible="true" weight="0.32352942" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.22933644" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3247963" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.22823529" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49878934" visible="true" weight="0.32352942" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32945284" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.114319384" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302663" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3299941" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993015" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3983871" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +346,27 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/员工信息表/员工信息.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/员工信息表/员工信息.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/函数/运维报警/func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/购物车/shop_car_23333.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1494">
@@ -383,17 +496,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/passwd_user/passwd_user.py">
+    <entry file="file://$PROJECT_DIR$/购物车/shop_car_23333.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="254">
+          <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/购物车/shop_car_23333.py">
+    <entry file="file://$PROJECT_DIR$/passwd_user/passwd_user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
+        <state relative-caret-position="72">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/员工信息表/员工信息表.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/函数/运维报警/func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/员工信息表/员工信息.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/函数/函数返回值.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/函数/嵌套函数.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/函数/局部变量.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/函数/作用域.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/函数/匿名函数.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
