@@ -54,3 +54,33 @@ functools.reduce()
 # 函数将一个数据集合（链表，元组等）中的所有数据进行下列操作：用传给 reduce 中的函数 function（有两个参数）先对集合中的第 1、2 个元素进行操作，得到的结果再与第三个数据用 function 函数运算，最后得到一个结果。
 pow()
 # 求多少次方
+print()
+#print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
+#end=''结尾以什么结尾，sep=''以什么为两个字符串拼接，
+#file=f,f为一个打开的文件流，可以print内容进这个文件里。
+#flush
+callable()
+#判断一个函数能不能被调用,可以拿来判断是不是函数
+frozenset()
+#冷冻的集合，把一个集合变成不可变的集合
+vars()
+#当前所有的变量名和值列出来
+locals()
+#打印函数的局部变量
+repr()
+#显示一个列表，但是是字符串形式
+zip()
+#吧两个列表一一对应组合成元组，
+compile()
+#编译代码
+complex()
+#变成复数
+round(1.1123123,2)
+#保留几位小数
+hash()
+#取哈希值
+set()
+# 把一个列表变成集合
+
+
+
