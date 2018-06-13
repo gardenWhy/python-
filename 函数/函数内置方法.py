@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+globals()
+# globals() 函数会以字典类型返回当前位置的全部全局变量。
 abs()
 # 取绝对值
 dict()
@@ -55,32 +56,29 @@ functools.reduce()
 pow()
 # 求多少次方
 print()
-#print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
-#end=''结尾以什么结尾，sep=''以什么为两个字符串拼接，
-#file=f,f为一个打开的文件流，可以print内容进这个文件里。
-#flush
+# print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
+# end=''结尾以什么结尾，sep=''以什么为两个字符串拼接，
+# file=f,f为一个打开的文件流，可以print内容进这个文件里。
+# flush
 callable()
-#判断一个函数能不能被调用,可以拿来判断是不是函数
+# 判断一个函数能不能被调用,可以拿来判断是不是函数
 frozenset()
-#冷冻的集合，把一个集合变成不可变的集合
+# 冷冻的集合，把一个集合变成不可变的集合
 vars()
-#当前所有的变量名和值列出来
+# 当前所有的变量名和值列出来
 locals()
-#打印函数的局部变量
+# 打印函数的局部变量
 repr()
-#显示一个列表，但是是字符串形式
+# 显示一个列表，但是是字符串形式
 zip()
-#吧两个列表一一对应组合成元组，
+# 吧两个列表一一对应组合成元组，
 compile()
-#编译代码
+# 编译代码
 complex()
-#变成复数
-round(1.1123123,2)
-#保留几位小数
+# 变成复数
+round(1.1123123, 2)
+# 保留几位小数
 hash()
-#取哈希值
+# 取哈希值
 set()
 # 把一个列表变成集合
-
-
-
