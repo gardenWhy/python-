@@ -7,7 +7,7 @@ user_status = False
 
 
 def login(func):
-    def inner():
+    def inner(*args,**kwargs):
         global user_status
         _username = 'garden'
         _password = 'garden'
@@ -22,7 +22,7 @@ def login(func):
         else:
             print('用户已登录，验证通过!')
         if user_status:
-            func()
+            func(*args,**kwargs)
 
     return inner
 
@@ -42,10 +42,11 @@ def China():
     print('===国产===')
 
 @login
-def Japanese():
-    print('===日本===')
+def Japanese(stely):
+    print('===日本===', stely)
 
 
 Home()
+Japanese('3p')
 American()
 China()
