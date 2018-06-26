@@ -3,7 +3,7 @@ a. 伪造浏览器向某个地址发送Http请求， 获取返回的字符串
 
     response = requests.get(url='地址')
     response.content
-    response.encoding = apparent_encoding
+    response.encoding = response.apparent_encoding #encoding是解码为xx格式，apparent_encoding是获取当前页面对象的编码格式
     response.text
 
 b.bs4 > 解析html格式的字符串
