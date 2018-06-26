@@ -1,0 +1,30 @@
+a. 伪造浏览器向某个地址发送Http请求， 获取返回的字符串
+    pip install requests
+
+    response = requests.get(url='地址')
+    response.content
+    response.encoding = apparent_encoding
+    response.text
+
+b.bs4 > 解析html格式的字符串
+    pip install beautifulsoup4
+
+    soup = BeautifulSoup('<html>...</html>', "html.parser") #还可以用lxml模块
+
+    div = soup.find(name='标签名') # 找指定标签内容
+    div = soup.find(name='标签名',id='i1')
+    div = soup.find(name='标签名',_class='i1') #可以用_class取样式
+    div = soup.find(name='标签名',attrs={'id':'auto-channel-lazyload-article', 'class':'id'}) #也可以用attrs来取id，取样式
+
+    div.text # 取文本
+    div.attrs # 取所有属性
+    div.get('href') # 取指定属性内容
+
+    divs = soup.find_all(name='标签名')
+    divs = soup.find_all(name='标签名',id='i1')
+    divs = soup.find_all(name='标签名',_class='i1') #可以用_class取样式
+    divs = soup.find_all(name='标签名',attrs={'id':'auto-channel-lazyload-article', 'class':'id'}) #也可以用attrs来取id，取样式
+
+
+    divs是列表
+    divs[0]

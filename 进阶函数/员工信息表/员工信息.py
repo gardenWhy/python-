@@ -33,8 +33,12 @@ def init_file():
             data_staff['depart'].append(staff_depart)
             data_staff['enrolled_date'].append(staff_date)
     return data_staff
+
+
 DATA_STAFF = init_file()
-#进行文件读取初始化
+
+
+# 进行文件读取初始化
 
 def welcome():
     print('''
@@ -55,12 +59,33 @@ def search():
                             命令行示例
       find name,age from staff_table where age > 22
       find * from staff_table where dept = "IT" 
-      find * from staff_table were enroll_data like "2013" 
+      find * from staff_table where enroll_date like "2013" 
       ********************************************************
-      
       ''')
     while True:
-        user_input = ("请输入你的查询语句（返回上一层，请输入q）:").split()
+        user_input = input("请输入你的查询语句（返回上一层，请输入q）:").split()
+        # 写第一个查询语句
+        for index, age in enumerate(DATA_STAFF['age']):  # 给‘age’建立索引映射相应的数据
+            if '>' in user_input:
+                if age > user_input[-1]:  # 判断年龄是否大于输入中的年龄，如果大于就输出键为‘name’中相应的索引值的数据
+                    print(DATA_STAFF['name'][index], ':', DATA_STAFF['age'][index])
+            elif '<' in user_input:
+                if age < user_input[-1]:
+                    print(DATA_STAFF['name'][index], ':', DATA_STAFF['age'][index])
+            elif '=' in user_input:
+                if age == user_input[-1]:
+                    print(DATA_STAFF['name'][index], ':', DATA_STAFF['age'][index])
+        # 写第二个查询语句
+        for index, depart in enumerate(DATA_STAFF['depart']):
+            if 'dept' in user_input:
+                if depart == user_input[-1].strip('"'):
+                    print(DATA_STAFF['name'][index], ',', DATA_STAFF['depart'][index])
+        # 写第三个查询语句
+        for index,enroll_data in DATA_STAFF:
+            if 'like' in user_input:
+                pass
+        if user_input == ['q']:
+            break
 
 
 def create():
@@ -70,8 +95,11 @@ def create():
                           命令行示例
     add staff Alex Li,25,134435344,IT,2015-10-29
     ********************************************************
-    请输入你的创建语句（返回上一层，请输入q）
     ''')
+    while True:
+        user_input = input('请输入你的创建语句（返回上一层，请输入q）:').split()
+        if user_input == ['q']:
+            break
 
 
 def delete():
@@ -81,8 +109,12 @@ def delete():
                          命令行示例
     del staff 3
    ********************************************************
-   请输入你的删除语句（返回上一层，请输入q）
+   
    ''')
+    while True:
+        user_input = input('请输入你的删除语句（返回上一层，请输入q）').split()
+        if user_input == ['q']:
+            break
 
 
 def updata():
@@ -92,8 +124,12 @@ def updata():
                          命令行示例
    UPDATE staff_table SET dept="Market" WHERE dept="IT"
    ********************************************************
-   请输入你的更新语句（返回上一层，请输入q）
+   
    ''')
+    while True:
+        user_input = input('请输入你的更新语句（返回上一层，请输入q）').split()
+        if user_input == ['q']:
+            break
 
 
 def show():
@@ -103,7 +139,7 @@ def show():
 def main():
     while True:
         welcome()
-        sign = input('请输入要执行的操作选项 >>')
+        sign = input("请输入要执行的操作选项(press 'q' to exit)>>")
         user_actions = {
             1: search,
             2: create,
@@ -111,6 +147,8 @@ def main():
             4: updata,
             5: show,
         }
+        if sign == 'q':
+            break
         if sign.isdigit():
             if sign.isdigit() in user_actions.keys():
                 user_action = user_actions[sign.isdigit()]
