@@ -2,7 +2,7 @@ a. 伪造浏览器向某个地址发送Http请求， 获取返回的字符串
     pip install requests
 
     response = requests.get(url='地址')
-    response.content
+    response.content # 输出二进制形式
     response.encoding = response.apparent_encoding #encoding是解码为xx格式，apparent_encoding是获取当前页面对象的编码格式
     response.text
 
