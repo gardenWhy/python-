@@ -1,0 +1,13 @@
+登陆抽屉自动点赞
+
+response = requests.post(
+                url = 'xx',
+                data={
+
+                },
+                headers={},
+                cookies={},
+            )
+cookie_dict = response.cookies.get_dict()
+分析请求信息
+伪造浏览器
