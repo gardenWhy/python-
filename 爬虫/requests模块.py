@@ -17,7 +17,7 @@ headers：请求头
 cookies：Cookies
 data：数据
 json: 数据
-
+proxies:代理
 '''
 
 requests.get(
@@ -53,3 +53,9 @@ requests.post(
 )
 #############################################
 
+# auth:基本的认证（基本没人用）
+# timeout：超时时间
+# allow_redirects：True 关闭重定向
+# stream： 下载大文件时
+# cert： 证书
+# verify：确认
