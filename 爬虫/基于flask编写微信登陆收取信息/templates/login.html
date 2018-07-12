@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GardenWeb</title>
+</head>
+<body>
+<div style="width: 200px;margin: 0 auto">
+    <h1 style="text-align: center">微信登陆</h1>
+    <img id="img" style="height: 200px;width: 200px" src="https://login.weixin.qq.com/qrcode/{{qcode}}" alt="">
+</div>
+
+<script src="../static/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        checkLogin()
+    })
+
+    function checkLogin() {
+        $.ajax({
+            url: "/check_login",
+            type: "GET",
+            datatype:"JSON",
+            success: function (arg) {
+                if(arg.code === 201){
+                    //扫码成功
+                    $('#img').attr('src',arg.src)
+                     checkLogin();
+                }else if(arg.code === 200){
+                    //重定向到用户列表
+                    location.href = '/index'
+                }else {
+                     checkLogin();
+                }
+
+            }
+        })
+    }
+</script>
+</body>
+</html>

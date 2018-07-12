@@ -1,0 +1,9 @@
+总结：
+    1.url
+    2.响应
+    3.cookie
+    4.chrome
+    PS：
+        轮训
+        长轮训
+        websocket

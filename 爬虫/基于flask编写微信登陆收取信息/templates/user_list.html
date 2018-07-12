@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GardenWeb</title>
+</head>
+<body>
+<div>
+    <div style="width: 30%;float: left">
+        <h3>{{wx_user_dict.MemberCount}}</h3>
+        <ul>
+        {%for item in wx_user_dict.MemberList%}
+            <li>{{item.NickName}} ===> {{item.UserName}}</li>
+        {%endfor%}
+        </ul>
+    </div>
+    <div style="width: 70%;float: left"></div>
+
+</div>
+
+</body>
+</html>

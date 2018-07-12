@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GardenWeb</title>
+</head>
+<body>
+<div>
+    {{ret}}
+</div>
+<script src="../static/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        checkMsg();
+    })
+    function checkMsg() {
+        $.ajax({
+            url:'check_msg',
+            type:'GET',
+            success:function (arg) {
+                checkMsg()
+            }
+
+        })
+    }
+
+</script>
+</body>
+</html>
