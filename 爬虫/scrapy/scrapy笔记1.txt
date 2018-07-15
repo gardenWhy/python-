@@ -1,0 +1,11 @@
+scrapy快速使用
+	创建项目：
+		命令行下
+			- scrapy startproject 项目名
+			- scrapy startproject garden
+				建立一个新的爬虫：
+					- scrapy genspider 爬虫名 爬的网站
+					- scrapy genspider chouti chouti.com
+					
+				写代码：
+					- scrapy crawl chouti --nolog
