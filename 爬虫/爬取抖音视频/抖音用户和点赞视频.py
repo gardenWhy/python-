@@ -3,6 +3,7 @@
 import re
 import os
 import requests
+from bs4 import BeautifulSoup
 
 url = 'https://www.douyin.com/share/user/95420758225?share_type=link'  # 96488770253/6556303280/67561351000
 
@@ -11,8 +12,9 @@ user_id = re.findall('share/user/(.*)\?', url)[0]
 
 # ###################### 2. 根据用户ID获取签名 #########################
 p = os.popen('node byted-acrawler.js %s' % user_id)
-print(p.readlines())
-signature = p.readlines()[0].strip()
+signature = p.readlines()[0]
+print(signature)
+# signature = p.readlines()[0]
 
 # ###################### 3. 获取抖音用户发送过的所有的视频 #########################
 headers = {
@@ -23,6 +25,14 @@ headers = {
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
 }
+dytk_ret = requests.get(
+    url=url,
+    headers=headers
+)
+dytk_soup = BeautifulSoup(dytk_ret.text,'lxml')
+dytk_script = dytk_soup.find_all('script',attrs={'type':'text/javascript'})
+dytk_str = str(dytk_script[-1])
+dytk = re.findall("dytk: '(.*)'",dytk_str)[0]
 
 user_video_list = []
 
@@ -31,7 +41,8 @@ user_video_params = {
     'count': '21',
     'max_cursor': '0',
     'aid': '1128',
-    '_signature': signature
+    '_signature': signature,
+    'dytk': dytk
 }
 
 
@@ -53,7 +64,7 @@ def get_aweme_list(max_cursor=None):
 get_aweme_list()
 
 print("该用户发布过抖音", user_video_list)
-
+'''
 # ###################### 4. 获取抖音赞过的所有视频 #########################
 
 favor_video_list = []
@@ -63,7 +74,8 @@ favor_video_params = {
     'count': '21',
     'max_cursor': '0',
     'aid': '1128',
-    '_signature': signature
+    '_signature': signature,
+    'dytk': dytk
 }
 
 
@@ -85,7 +97,7 @@ def get_favor_list(max_cursor=None):
 get_favor_list()
 
 print("该用户赞过抖音", favor_video_list)
-
+'''
 # ###################### 5. 下载抖音 #########################
 
 base_download_folder = os.path.join('download', user_id)
@@ -111,29 +123,35 @@ for aweme in user_video_list:
             },
             stream=True,
         )
+        print('正在下载',video_id)
         with open(file_path, 'wb') as fh:
             for chunk in response_video.iter_content(chunk_size=1024):
                 fh.write(chunk)
-
+'''
 # 下载赞过的视频
-favor_download_folder = os.path.join(base_download_folder, 'favor')
-if not os.path.isdir(favor_download_folder):
-    os.mkdir(favor_download_folder)
+snum = input('是否下载点赞视频?（1)')
+if snum == 1:
+    favor_download_folder = os.path.join(base_download_folder, 'favor')
+    if not os.path.isdir(favor_download_folder):
+        os.mkdir(favor_download_folder)
 
-for aweme in favor_video_list:
-    if aweme.get('video', None):
-        video_id = aweme['video']['play_addr']['uri']
+    for aweme in favor_video_list:
+        if aweme.get('video', None):
+            video_id = aweme['video']['play_addr']['uri']
 
-        file_name = video_id + ".mp4"
-        file_path = os.path.join(favor_download_folder, file_name)
+            file_name = video_id + ".mp4"
+            file_path = os.path.join(favor_download_folder, file_name)
 
-        response_video = requests.get(
-            url='https://aweme.snssdk.com/aweme/v1/play/',
-            params={
-                'video_id': video_id,
-            },
-            stream=True,
-        )
-        with open(file_path, 'wb') as fh:
-            for chunk in response_video.iter_content(chunk_size=1024):
-                fh.write(chunk)
+            response_video = requests.get(
+                url='https://aweme.snssdk.com/aweme/v1/play/',
+                params={
+                    'video_id': video_id,
+                },
+                stream=True,
+            )
+            with open(file_path, 'wb') as fh:
+                for chunk in response_video.iter_content(chunk_size=1024):
+                    fh.write(chunk)
+else:
+    pass
+'''
