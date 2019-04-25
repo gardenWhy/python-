@@ -36,6 +36,7 @@ def chinese():
 @login
 def jp():
     print('====欢迎进入日本专区====')
+    print('welcome')
 
 
 if __name__ == '__main__':
